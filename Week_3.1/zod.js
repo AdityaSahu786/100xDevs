@@ -14,6 +14,10 @@ app.post("/health-checkup", function (req, res) {
         res.status(411).json({
             msg: "Input Invalid"
         })
+    } else {
+        res.send({
+            response
+        })
     }
 });
 
