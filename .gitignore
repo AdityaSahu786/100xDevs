@@ -1,1 +1,5 @@
+# Ignore all node_modules directories recursively
+**/node_modules
+
 Week_3.1/node_modules
+WEEK_3.2/Authentication/node_modules
