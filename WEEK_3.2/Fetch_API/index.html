@@ -7,14 +7,20 @@
 </head>
 <body>
     <script>
-        function getAnimalData(){
+       /* function getAnimalData(){
           const response = fetch("https://fakerapi.it/api/v1/persons")
           .then(function(response) {
              const json = response.json()
              console.log(response)
           })
 
-        }
+        } */
+    async function getAnimalData() {
+        const response = await fetch("https://fakerapi.it/api/v1/persons");
+        const finalData = await response.json();
+        console.log(finalData)
+    }
+    getAnimalData()
     </script>
     <button onClick="getAnimalData()">Get Animal Data</button>
 </body>
