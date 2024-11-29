@@ -8,10 +8,14 @@
 <body>
     <script>
         function getAnimalData(){
-          const response = fetch("https://fakerapi.it/api/v1/persons");
-          console.log(response)
+          const response = fetch("https://fakerapi.it/api/v1/persons")
+          .then(function(response) {
+             const json = response.json()
+             console.log(response)
+          })
+
         }
     </script>
     <button onClick="getAnimalData()">Get Animal Data</button>
 </body>
-</html>
+</html> 
