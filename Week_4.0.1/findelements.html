@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>JavaScript HTML DOM</h2>
+
+     <p>Finding HTML Elements by Query Selectors</p>
+
+     <div> Div one</div>
+     <p class="intro">Paragraph one</p>
+     <div>Div Two</div>
+     <p class="subheading"> Parragraph Two </p>
+     <div> Yet another div </div>
+     <div id="myDiv" style="border:1px solid black; padding:0px">
+        <h2 class="example">A Heading</h2>
+        <h2 class="example">A Paragrph</h2>
+        <h2 class="example">A Paragrph</h2>
+     </div>
+     <p id="demo"></p>
+     <script>
+        var paragraphs = document.querySelectorAll('p.intro');
+        paragraphs.forEach(paragraph => paragraph.style.backgroundColor = "red")
+
+        const element = document.getElementById("myDIV")
+        const list = element.querySelectorAll(".example");
+        document.getElementById("demo").innerHTML = list.length;
+     </script>
+</body>
+</html>
