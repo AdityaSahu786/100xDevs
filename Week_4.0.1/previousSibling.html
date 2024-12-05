@@ -15,8 +15,19 @@
         </ul>
         <p>Hello World!</p>
     </div>
-    <script>
-        const ul = document.get
+    <script type="text/javascript">
+        const ul = document.querySelector(".items");
+        //parentNode
+        console.log(ul.parentNode)
+        ul.parentNode.style.color="red";
+
+        //child node
+        //console.log(ul.children[1])
+        //console.log(ul.previousElementSibling)
+
+        //children
+        console.log(ul.children[1]);
+        console.log(ul.previousElementSibling);
     </script>
 </body>
 </html>
