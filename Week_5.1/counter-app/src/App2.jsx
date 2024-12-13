@@ -11,10 +11,14 @@ function App() {
         completed: true
     }]);
 
+   /* return (
+        <div>
+            {JSON.stringify(todos)}
+        </div>
+    ) */
    return (
     <div>
-        <Todo title={todos[0].title} description={todos[0].description}></Todo>
-        <Todo title={todos[1].title} description={todos[1].description}></Todo>
+        <Todo title="Aditya" description="Aditya Sahu"></Todo>
     </div>
    )
 }
