@@ -11,11 +11,16 @@ function App() {
         completed: true
     }]);
 
-    return (
+   /* return (
         <div>
             {JSON.stringify(todos)}
         </div>
-    )
+    ) */
+   return (
+    <div>
+        <Todo title="Aditya" description="Aditya Sahu"></Todo>
+    </div>
+   )
 }
 
 function Todo(props) {
