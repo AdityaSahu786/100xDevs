@@ -7,6 +7,11 @@ const port = 3000;
 
 app.use(express.json());
 
+/* body {
+     title: string,
+     description: string
+} */
+
 app.post("/todo", function(req, res) {
 
 })
