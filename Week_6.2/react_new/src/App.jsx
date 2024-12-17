@@ -34,7 +34,7 @@ function Todo({id}) {
         .then(response => {
             setTodo(response.data.todo)
         })
-    }, [])
+    }, [id])
 
     return <div>
         Id: {id}
